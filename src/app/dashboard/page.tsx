@@ -21,13 +21,8 @@ import {
 import { useTheme } from '@/components/ThemeProvider'
 
 import { NotificationCenter } from '@/components/PremiumFeatures'
-import { Session } from "next-auth"
 
-interface NavigationProps {
-  session: Session
-}
-
-export default function Navigation({ session }: NavigationProps) {
+export default function Navigation({ session } : any) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [showUserMenu, setShowUserMenu] = useState(false)
   const [showSearch, setShowSearch] = useState(false)

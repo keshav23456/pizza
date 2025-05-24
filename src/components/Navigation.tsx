@@ -27,6 +27,7 @@ interface NavigationProps {
 }
 
 export default function Navigation({ session }: NavigationProps) {
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [showUserMenu, setShowUserMenu] = useState(false)
   const [showSearch, setShowSearch] = useState(false)
